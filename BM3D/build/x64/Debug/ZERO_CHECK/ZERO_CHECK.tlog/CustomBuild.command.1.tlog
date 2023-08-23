@@ -1,0 +1,10 @@
+^D:\WORKSPACE\MSC_CODE\BUILD\CMAKEFILES\99067D77EE9169FB23578B8AC7C8BCBB\GENERATE.STAMP.RULE
+setlocal
+D:\API\CMake\bin\cmake.exe -SD:/WorkSpace/MSC_code -BD:/WorkSpace/MSC_code/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/WorkSpace/MSC_code/build/bm3d.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
